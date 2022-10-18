@@ -12,11 +12,14 @@ position: relative;
     overflow: hidden;
    
 }
-.booksDiv{
+.books{
     position: relative;
-    left: -580px;
-    justify-content: center;
-    display: flex; 
+    
+    width: 1290px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 img{
 
@@ -26,9 +29,21 @@ img{
 
 .mainDiv{
     display: flex; 
-    position: relative;
-    justify-content: center;
     flex-wrap: wrap;
+    width: 1290px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body{
+   
+
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+
+
+
 }
 
 h2, p{

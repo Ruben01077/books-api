@@ -9,7 +9,7 @@ function home(data) {
 
             <div className="Div">
 
-                <img src={book.pic} alt="" srcset="" />
+                <img src={book.pic} />
                 <div className="textDiv">
                     <h2>{book.title}</h2>
                     <p>Available {book.available}</p>
@@ -35,9 +35,9 @@ function home(data) {
                 </head>
                 <body>
                     <div>
-                        <div className="booksDiv">
-                            <h1>Books</h1>
-                        </div>
+
+                        <h1 className="books">Books</h1>
+
                         <div className="mainDiv">
 
                             {booksFormatted}
