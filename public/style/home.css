@@ -1,0 +1,52 @@
+.Div {
+position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 10px;
+    height: 100%;
+    border: 0.5px solid;
+    border-radius: 10px;
+    border-color: darkgrey;
+    padding-bottom: 10px;
+    overflow: hidden;
+   
+}
+.booksDiv{
+    position: relative;
+    left: -580px;
+    justify-content: center;
+    display: flex; 
+}
+img{
+
+    width: 300px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.mainDiv{
+    display: flex; 
+    position: relative;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+h2, p{
+
+    margin: 2px;
+
+}
+p{
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+}
+
+.textDiv{
+
+    position: relative;
+    right: -20px;
+    width: 280px;
+    margin-top: 15px;
+
+}
