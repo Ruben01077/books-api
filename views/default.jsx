@@ -1,22 +1,22 @@
 const React = require("react");
 
-function Def (html){
+function Def(html) {
 
-return(
+    return (
 
-<html>
-    <head>
-
-    </head>
-    <body>
-
-
-        {html.children}
-    </body>
-</html>
+        <html>
+            <head>
+                <link rel="stylesheet" href="./style/default.css" />
+            </head>
+            <body>
 
 
-)
+                {html.children}
+            </body>
+        </html>
+
+
+    )
 
 
 }

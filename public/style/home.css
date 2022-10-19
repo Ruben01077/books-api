@@ -7,7 +7,7 @@ position: relative;
     height: 100%;
     border: 0.5px solid;
     border-radius: 10px;
-    border-color: darkgrey;
+    border-color: rgb(12, 12, 12);
     padding-bottom: 10px;
     overflow: hidden;
    
@@ -62,5 +62,13 @@ p{
     right: -20px;
     width: 280px;
     margin-top: 15px;
+
+}
+
+
+#title{
+
+    font-size: 59px;
+
 
 }
