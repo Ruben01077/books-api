@@ -12,7 +12,7 @@ function home(data) {
                 <img src={book.pic} />
                 <div className="textDiv">
                 <a className="aTag" href={`home/${index}`}> <h2>{book.title}</h2> </a>
-                    <p>Available {book.available}</p>
+                    <p>Available: {book.available}</p>
                     <p className="pText">{book.text}</p>
 
                 </div>
