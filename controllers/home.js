@@ -17,15 +17,28 @@ router.get('/new', (req, res) => {
   })
 
 
+router.get('/:id', (req, res) => {
+  
+  let id = Number(req.params.id) 
+  if (isNaN(id)){           //if the input is not number render error
+    res.render("books/error404")
+  } else if(!books[id]){    // if input is out of array render error
+    
+    res.render("books/error404")
+  
+} else {
+
+  res.render('books/show.jsx', {book: books[id]}) //Pass the data in places[id] to your view.
+  }
+})
+
+
   router.post('/', (req, res) => {
    
     if(!req.body.pic){
         //Default image if one is not provide
         req.body.pic = "https://assets.weforum.org/article/image/v2gQQH6Qq5EAJSemo1Yqie27aYBOHE4pSwA6jSkFHKg.jpg"
-
     }
-
-
     books.push(req.body)
     res.redirect("/home")
   })

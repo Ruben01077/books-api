@@ -13,8 +13,8 @@ app.use(express.urlencoded({ extended: true }))
 
 
 
-
 app.use("/home", require("./controllers/home"))
+app.use("/", require("./controllers/home"))
 
 
 

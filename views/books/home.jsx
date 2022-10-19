@@ -4,20 +4,21 @@ const Def = require("../default")
 
 function home(data) {
 
-    let booksFormatted = data.books.map((book) => {
+    let booksFormatted = data.books.map((book, index) => {
         return (
 
-            <div className="Div">
+             <div className="Div">
 
                 <img src={book.pic} />
                 <div className="textDiv">
-                    <h2>{book.title}</h2>
+                <a className="aTag" href={`home/${index}`}> <h2>{book.title}</h2> </a>
                     <p>Available {book.available}</p>
                     <p className="pText">{book.text}</p>
 
                 </div>
 
             </div>
+         
         )
     })
 
