@@ -1,17 +1,19 @@
 .Div {
-position: relative;
-    display: inline-flex;
-    flex-direction: column;
+display: flex;
+flex-direction: column;
     width: 300px;
     margin: 10px;
-    height: 100%;
     border: 0.5px solid;
     border-radius: 10px;
     border-color: rgb(12, 12, 12);
     padding-bottom: 10px;
-    overflow: hidden;
+ 
+  
+    
    
 }
+
+
 .books{
     position: relative;
     width: 1260px;
@@ -56,6 +58,9 @@ img{
     width: 1290px;
     margin-left: auto;
     margin-right: auto;
+    align-items: stretch;
+    
+  
 }
 
 body{
@@ -84,8 +89,17 @@ p{
 
     position: relative;
     right: -20px;
-    width: 280px;
+    width: 260px;
     margin-top: 15px;
+    word-wrap:break-word;
+    
+
+}
+
+.pText{
+   position: relative;
+
+   
 
 }
 

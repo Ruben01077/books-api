@@ -13,7 +13,7 @@ function home(data) {
                 <div className="textDiv">
                     <h2>{book.title}</h2>
                     <p>Available {book.available}</p>
-                    <p>{book.text}</p>
+                    <p className="pText">{book.text}</p>
 
                 </div>
 

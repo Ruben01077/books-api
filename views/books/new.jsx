@@ -22,23 +22,24 @@ function new_form() {
 
                         <h1>Add New Books</h1>
                     <div className="masterDiv">
+
                         <form method="POST" action="/home">
                             <div className="allDives">
                                 <div>
                                     <label htmlFor="pic">Inpute image URL</label>
-                                    <input type="url" id="pic" name="pic" required />
+                                    <input type="url" id="pic" name="pic"  />
                                 </div>
                                 <div>
                                     <label htmlFor="title">Title</label>
                                     <input type="text" id="title" name="title" required />
                                 </div>
                                 <div>
-                                    <label htmlFor="qt">Quantity</label>
-                                    <input type="number" id="qt" name="qt" required />
+                                    <label htmlFor="available">Quantity</label>
+                                    <input type="number" id="available" name="available" required />
                                 </div>
                                 <div>
                                     <label htmlFor="text">Text</label>
-                                    <input type="textarea" id="text" name="text"   required />
+                                    <input type="text" id="text" name="text"   required />
                                 </div>
                                 <input className="submit" type="submit" value="Add Books" required />
                             </div>
