@@ -37,6 +37,7 @@ function home(data) {
                     <div>
 
                         <h1 className="books">Books</h1>
+                        <a className="GoNewPage" href="/home/new">Add New Books</a>
 
                         <div className="mainDiv">
 

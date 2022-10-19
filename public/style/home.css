@@ -19,7 +19,31 @@ position: relative;
     margin-left: auto;
     margin-right: auto;
     
+    
 }
+
+.GoNewPage{
+    position: relative;
+    width: 1260px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+  cursor: pointer;
+
+
+}
+
+.GoNewPage:hover{
+
+    text-shadow: 1px 1px 1px black;
+
+}
+
+
 img{
 
     width: 300px;

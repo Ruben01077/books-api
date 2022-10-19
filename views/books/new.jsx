@@ -46,7 +46,9 @@ function new_form() {
 
                         </form>
 
+
                     </div>
+                            <a className="goHome" href="/home">Go Home</a>
 
                 </body>
             </html>
