@@ -34,7 +34,7 @@ function new_form() {
                                 </div>
                                 <div>
                                     <label htmlFor="qt">Quantity</label>
-                                    <input type="text" id="qt" name="qt" required pattern="[0-9]" title="Please Enter Only number"/>
+                                    <input type="number" id="qt" name="qt" required />
                                 </div>
                                 <div>
                                     <label htmlFor="text">Text</label>
