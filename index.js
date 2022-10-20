@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const methodOverride = require("method-override")  // For Edit(put) and Delet methods
 require("dotenv").config()
 
 
@@ -10,6 +11,9 @@ app.engine("jsx", require("express-react-views").createEngine())
 app.use(express.static("public"))
 //Remember, when we send data with the POST verb, that data gets encrypted for its trip across the internet. Because it is protected this way while in transit, that makes it extra safe for usernames, passwords, and other sensitive data. However, it also means we will need an extra tool to decrypt that data for us
 app.use(express.urlencoded({ extended: true }))
+// For Edit(put) and Delet methods
+app.use(methodOverride("_method"))
+
 
 
 

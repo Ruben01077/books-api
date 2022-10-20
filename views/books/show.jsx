@@ -27,6 +27,15 @@ return(
                 <h1>{data.book.title}</h1>
                 <h3>Available: {data.book.available}</h3>
                 <h3>{data.book.text}</h3>
+                    <div className="EditDeleteDiv">
+
+                        <a  href={`/books/${data.id}/edit`}><button className="editButton">Edit</button></a>
+
+                        <form method="POST" action={`/home/${data.id}?_method=DELETE`}>
+                            <button className="deleteButton" type="submit" >Delete</button>
+                        </form>
+
+                    </div>
 
             
             </div>
@@ -49,3 +58,7 @@ return(
 }
 
 module.exports = show
+
+
+
+

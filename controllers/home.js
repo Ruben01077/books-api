@@ -28,7 +28,22 @@ router.get('/:id', (req, res) => {
   
 } else {
 
-  res.render('books/show.jsx', {book: books[id]}) //Pass the data in places[id] to your view.
+  res.render('books/show.jsx', {book: books[id], id}) //Pass the data in places[id] to your view.
+  }
+})
+
+
+router.delete('/:id', (req, res) => {
+  let id = Number(req.params.id)
+  if (isNaN(id)) {
+    res.render('error404')
+  }
+  else if (!books[id]) {
+    res.render('error404')
+  }
+  else {
+    books.splice(id, 1)
+    res.redirect('/home')
   }
 })
 
@@ -42,6 +57,12 @@ router.get('/:id', (req, res) => {
     books.push(req.body)
     res.redirect("/home")
   })
+
+
+  
+
+
+
   
 
 
